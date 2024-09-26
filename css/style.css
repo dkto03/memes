@@ -1,0 +1,215 @@
+/*GENERAL STYLES */
+
+/* add your font import line here */
+
+.roboto-mono {
+    font-family: "Roboto Mono", monospace, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200 ;
+    font-style: normal;
+  }
+
+div {
+	--angle: 0deg;
+	width: 2%;
+	height: 2%;
+	border: 30px solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	
+	animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+input[type="checkbox"] {
+	position: fixed;
+	top: 1em;
+	left: 1em;
+}
+
+input[type="checkbox"]:after {
+	content: 'Toggle Fill';
+	white-space: nowrap;
+	padding-left: 1.5em;
+}
+
+input[type="checkbox"]:checked + div {
+	border-image-slice: 1 fill;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	place-items: center;
+	background: #fff;
+}
+
+footer {
+	text-align: center;
+	font-style: italic;
+    color: #fff;
+    font-weight: 200;
+}
+
+mark {
+    background-color: hotpink;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* add your font-family property to the body rule here. You will also add a background color and text color here. */
+body{
+    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjYzNGo2OGY3Z2ZtOWs1cDJ2emRxMWlhcm9sODY1Z2luejVhenU0ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YWbM6nDnBo8X7WIKpl/giphy.gif);
+    background-size: cover;
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+
+body {
+    align-items: center;
+    margin: 0 auto;
+    background-color: aliceblue;
+    max-width: 1000px;
+}
+
+/* TAG SELECTOR STYLES */
+/* Style your header and footer together here. You can add a background color, another font-family, another text color, a border, etc */
+header, 
+footer {
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    margin: auto; 
+    text-align: center;
+    padding: 10px;
+}
+
+/* Here you will style your <main> box holding all of your collection items. You can give it a background color. But most importantly, make the parent main selector a flebox, make it a row, make it wrap, and justify the content to space between*/
+main {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+} 
+
+/* This rule provides 10px of padding around all sides of each image on your page */
+img {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This rule styles the paragraphs that are describing each of your collection items. You can change the color, font-size, or font-family. */
+
+p {
+    font-size: 12pt;
+    padding: 10px;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: #2b4249;
+}
+
+#hallo {
+    border-style: groove;
+    border-color: aqua;
+    color: aqua;
+    width: auto;
+    background-color: black;
+    margin: 5pt;
+}
+
+#agony {
+    border-style: dashed;
+    border-color: blueviolet;
+    color: blueviolet;
+    width: auto;
+    background-color: rgb(225, 225, 255);
+    margin: 5pt;
+}
+
+#benji-pup {
+    border-style: dotted;
+    border-color: grey;
+    color: grey;
+    width: auto;
+    background-color: whitesmoke;
+    margin: 5pt;
+}
+
+#crying {
+    border-style: dotted;
+    border-color: paleturquoise;
+    color: paleturquoise;
+    width: auto;
+    background-color: blue;
+    margin: 5pt;
+}
+
+#joke-bear {
+    border-style: dotted;
+    border-color: palegoldenrod;
+    color: palegoldenrod;
+    width: auto;
+    background-color: rgb(47, 60, 121);
+    margin: 5pt;
+}
+
+#japanese-cat {
+    border-style: dotted;
+    border-color: rgb(90, 126, 173);
+    color: rgb(90, 126, 173);
+    width: auto;
+    background-color: pink;
+    margin: 5pt;
+}
+
+#pp {
+    border-style: dotted;
+    border-color: red;
+    color: red;
+    width: auto;
+    background-color: salmon;
+    margin: 5pt;
+}
+
+#thumbs-up {
+    border-style: dotted;
+    border-color: navy;
+    color: navy;
+    width: auto;
+    background-color: darkturquoise;
+    margin: 5pt;
+}
+
+#wall-punch {
+    border-style: dotted;
+    border-color: lightcyan;
+    color: lightcyan;
+    width: auto;
+    background-color: magenta;
+    margin: 5pt;
+}
+
+/* CLASSES & IDS */ 
+
+/* Give each <div> a unique id selector in the HTML document. Then, below, create a #id rule for each section. You can then give each a different background color, add text-align:center, add margin, border, etc. But most importantly, give each a width in percentages that equals about 1/3 of a row that is equal to 100%*/
+
